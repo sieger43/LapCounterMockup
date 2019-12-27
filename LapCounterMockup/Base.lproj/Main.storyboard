@@ -51,7 +51,7 @@
         <!--Time-->
         <scene sceneID="h8i-ot-rmb">
             <objects>
-                <viewController id="DNe-yc-jnj" userLabel="Time" customClass="TimerViewController" customModule="Homepwner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="DNe-yc-jnj" userLabel="Time" customClass="TimerViewController" customModule="LapCounterMockup" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zjf-ak-VkM"/>
                         <viewControllerLayoutGuide type="bottom" id="HM7-q5-7cu"/>
@@ -60,30 +60,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nE-GP-gkS">
-                                <rect key="frame" x="170.5" y="385" width="34" height="30"/>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nE-GP-gkS">
+                                <rect key="frame" x="145.5" y="452" width="84" height="30"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="84" id="fun-lV-Zfe"/>
                                     <constraint firstAttribute="height" constant="30" id="scQ-MY-aPw"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="buttonAction:" destination="DNe-yc-jnj" eventType="touchUpInside" id="6Gw-w1-uG7"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8YU-vI-fBm">
-                                <rect key="frame" x="178" y="322" width="19" height="22"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8YU-vI-fBm">
+                                <rect key="frame" x="16" y="257" width="343" height="152"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="81"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="1nE-GP-gkS" firstAttribute="top" secondItem="8YU-vI-fBm" secondAttribute="bottom" constant="41" id="4jS-Wb-wbm"/>
-                            <constraint firstItem="8YU-vI-fBm" firstAttribute="centerX" secondItem="1nE-GP-gkS" secondAttribute="centerX" id="lca-UR-cHD"/>
-                            <constraint firstItem="HM7-q5-7cu" firstAttribute="top" secondItem="1nE-GP-gkS" secondAttribute="bottom" constant="203" id="oAu-e3-uIf"/>
-                            <constraint firstItem="1nE-GP-gkS" firstAttribute="centerX" secondItem="LFB-7K-a4y" secondAttribute="centerX" id="qkV-IU-3XP"/>
-                            <constraint firstItem="8YU-vI-fBm" firstAttribute="centerY" secondItem="LFB-7K-a4y" secondAttribute="centerY" id="yrn-8v-sBH"/>
+                            <constraint firstItem="8YU-vI-fBm" firstAttribute="leading" secondItem="LFB-7K-a4y" secondAttribute="leadingMargin" id="6cd-l9-5Dh"/>
+                            <constraint firstItem="8YU-vI-fBm" firstAttribute="centerY" secondItem="LFB-7K-a4y" secondAttribute="centerY" id="BLP-sJ-IG3"/>
+                            <constraint firstItem="HM7-q5-7cu" firstAttribute="top" secondItem="1nE-GP-gkS" secondAttribute="bottom" constant="136" id="D70-7D-R5R"/>
+                            <constraint firstItem="1nE-GP-gkS" firstAttribute="top" secondItem="8YU-vI-fBm" secondAttribute="bottom" constant="43" id="hFU-bG-cJW"/>
+                            <constraint firstItem="8YU-vI-fBm" firstAttribute="trailing" secondItem="LFB-7K-a4y" secondAttribute="trailingMargin" id="i2m-4m-skY"/>
+                            <constraint firstItem="8YU-vI-fBm" firstAttribute="centerX" secondItem="1nE-GP-gkS" secondAttribute="centerX" id="yUa-5V-t9X"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Time" image="icon_29pt" landscapeImage="icon_29pt" largeContentSizeImage="icon_29pt" id="X5s-Hd-i3s" userLabel="Time"/>
@@ -94,7 +97,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="86x-3E-Bkl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-674" y="-848"/>
+            <point key="canvasLocation" x="-674.39999999999998" y="-848.72563718140941"/>
         </scene>
         <!--Lap-->
         <scene sceneID="81M-ac-9eh">
@@ -118,7 +121,7 @@
         <!--About-->
         <scene sceneID="7yf-VX-Uec">
             <objects>
-                <tableViewController id="66W-v5-HZ5" userLabel="About" customClass="ItemsViewController" customModule="Homepwner" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="66W-v5-HZ5" userLabel="About" customClass="ItemsViewController" customModule="LapCounterMockup" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="IqO-gP-0b7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
