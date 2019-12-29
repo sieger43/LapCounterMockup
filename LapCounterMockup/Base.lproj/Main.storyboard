@@ -60,19 +60,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nE-GP-gkS">
-                                <rect key="frame" x="145.5" y="452" width="84" height="30"/>
-                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="k7W-gk-wya">
+                                <rect key="frame" x="73" y="465" width="229" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nE-GP-gkS">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="50"/>
+                                        <color key="backgroundColor" white="0.95035599990629815" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <state key="normal" title="Start"/>
+                                        <connections>
+                                            <action selector="buttonAction:" destination="DNe-yc-jnj" eventType="touchUpInside" id="6Gw-w1-uG7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFX-Rn-r8c">
+                                        <rect key="frame" x="172" y="0.0" width="57" height="50"/>
+                                        <color key="backgroundColor" white="0.94834785730066429" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <state key="normal" title="Lap"/>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="84" id="fun-lV-Zfe"/>
-                                    <constraint firstAttribute="height" constant="30" id="scQ-MY-aPw"/>
+                                    <constraint firstAttribute="height" constant="50" id="M0c-kF-q51"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <state key="normal" title="Start"/>
-                                <connections>
-                                    <action selector="buttonAction:" destination="DNe-yc-jnj" eventType="touchUpInside" id="6Gw-w1-uG7"/>
-                                </connections>
-                            </button>
+                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8YU-vI-fBm">
                                 <rect key="frame" x="16" y="257" width="343" height="152"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="81"/>
@@ -81,12 +91,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="8YU-vI-fBm" firstAttribute="leading" secondItem="LFB-7K-a4y" secondAttribute="leadingMargin" id="6cd-l9-5Dh"/>
-                            <constraint firstItem="8YU-vI-fBm" firstAttribute="centerY" secondItem="LFB-7K-a4y" secondAttribute="centerY" id="BLP-sJ-IG3"/>
-                            <constraint firstItem="HM7-q5-7cu" firstAttribute="top" secondItem="1nE-GP-gkS" secondAttribute="bottom" constant="136" id="D70-7D-R5R"/>
-                            <constraint firstItem="1nE-GP-gkS" firstAttribute="top" secondItem="8YU-vI-fBm" secondAttribute="bottom" constant="43" id="hFU-bG-cJW"/>
-                            <constraint firstItem="8YU-vI-fBm" firstAttribute="trailing" secondItem="LFB-7K-a4y" secondAttribute="trailingMargin" id="i2m-4m-skY"/>
-                            <constraint firstItem="8YU-vI-fBm" firstAttribute="centerX" secondItem="1nE-GP-gkS" secondAttribute="centerX" id="yUa-5V-t9X"/>
+                            <constraint firstItem="k7W-gk-wya" firstAttribute="top" secondItem="8YU-vI-fBm" secondAttribute="bottom" constant="56" id="1oJ-0i-Xfh"/>
+                            <constraint firstItem="8YU-vI-fBm" firstAttribute="trailing" secondItem="LFB-7K-a4y" secondAttribute="trailingMargin" id="3Ly-Wh-5a6"/>
+                            <constraint firstItem="8YU-vI-fBm" firstAttribute="centerY" secondItem="LFB-7K-a4y" secondAttribute="centerY" id="J7e-lT-kxp"/>
+                            <constraint firstItem="HM7-q5-7cu" firstAttribute="top" secondItem="k7W-gk-wya" secondAttribute="bottom" constant="103" id="Sgg-UJ-jnN"/>
+                            <constraint firstItem="8YU-vI-fBm" firstAttribute="centerX" secondItem="k7W-gk-wya" secondAttribute="centerX" id="uPD-Fw-2Mt"/>
+                            <constraint firstItem="8YU-vI-fBm" firstAttribute="leading" secondItem="LFB-7K-a4y" secondAttribute="leadingMargin" id="zHV-S3-GQ7"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Time" image="icon_29pt" landscapeImage="icon_29pt" largeContentSizeImage="icon_29pt" id="X5s-Hd-i3s" userLabel="Time"/>
