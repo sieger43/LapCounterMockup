@@ -14,7 +14,7 @@
 1. The table has the saved values of the time/date and the associated lap count from when the user clicks the Lap Button on the Lap Counter Screen.
 2. The data is persisted across application sessions by using CoreData.
 3. the Clear Lap History Button removes all of the UI table entries and all of the associated Core Data entries.
-## Weather
+## Weather Screen
 ![screen_03](https://raw.githubusercontent.com/sieger43/LapCounterMockup/master/Screen_03.png)
 1. The weather screen is to show the "pre-run" weather to the user to possibly make a go/no-go decision on a run.
 2. The weather uses the https://openweathermap.org/ API.
